@@ -1,11 +1,15 @@
 # pgscope
-Navigation tool for PL/pgSQL source files.
+PL/pgSQL source code tree search and browse tool
 
 Embed seamlessly with vim
 
 # Getting Started
 
-## Instalation from source
+## Download
+
+[Fedora 27 RPM Package](https://github.com/gjalves/pgscope/releases/download/0.0.1/pgscope-0.0.1-1.fc27.x86_64.rpm)
+
+## Installation from source
 
 ```
 git clone https://github.com/lfittl/libpg_query.git
