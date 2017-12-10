@@ -1,2 +1,37 @@
 # pgscope
-Navigation tool for PL/pgSQL
+Navigation tool for PL/pgSQL source files.
+
+Embed seamlessly with vim
+
+# Getting Started
+
+## Instalation from source
+make
+
+## Using
+
+Type pgscope to index all .sql files in current and descending directories. After that, open your .sql file with vim and put cursor under any external function. Call it using <kbd>CTRL</kbd>+<kbd>]</kbd>.
+
+If you need to reindex, use `:!pgscope` in vim.
+
+If you wish to reindex automatically after save, type in vim command mode:
+
+```
+:autocmd BufWritePost *.sql :silent !pgscope
+```
+
+[![asciicast](https://asciinema.org/a/uGW8Wz5TM3vqRoxCtqI0bCLxM.png)](https://asciinema.org/a/uGW8Wz5TM3vqRoxCtqI0bCLxM)
+
+# Donation
+
+Contributions are very welcome and will help the continuity of this software development
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HNXL8RS8FWGB2)
+
+# Questions
+
+Any questions can be send directly to mailto:gjalves+pgscope@gjalves.com.br
+
+# License
+
+PgScope is copyright 2017 for Gustavo Junior Alves and available under BSD 3-Clause License. See the [LICENSE](https://github.com/gjalves/pgscope/blob/master/LICENSE) file.
