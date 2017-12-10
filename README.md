@@ -6,11 +6,18 @@ Embed seamlessly with vim
 # Getting Started
 
 ## Instalation from source
+
+```
+git clone https://github.com/lfittl/libpg_query.git
+cd libpg_query
 make
+cd -
+make
+```
 
 ## Using
 
-Type pgscope to index all .sql files in current and descending directories. After that, open your .sql file with vim and put cursor under any external function. Call it using <kbd>CTRL</kbd>+<kbd>]</kbd>.
+Type pgscope to index all .sql files in current and descending directories. After that, open your .sql file with vim and put cursor under any external function. Call it using <kbd>CTRL</kbd>+<kbd>]</kbd>. If you wish to came back to calling function, use <kbd>CTRL</kbd>+<kbd>O</kbd>
 
 If you need to reindex, use `:!pgscope` in vim.
 
@@ -24,13 +31,13 @@ If you wish to reindex automatically after save, type in vim command mode:
 
 # Donation
 
-Contributions are very welcome and will help the continuity of this software development
+Contributions of any amount are very welcome and will help the continuity of this software development
 
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HNXL8RS8FWGB2)
 
-# Questions
+# Author
 
-Any questions can be send directly to mailto:gjalves+pgscope@gjalves.com.br
+[Gustavo Junior Alves](https://github.com/gjalves)
 
 # License
 
