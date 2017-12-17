@@ -7,7 +7,7 @@ Embed seamlessly with vim
 
 ## Download
 
-[Fedora 27 RPM Package](https://github.com/gjalves/pgscope/releases/download/0.0.1/pgscope-0.0.1-1.fc27.x86_64.rpm)
+[Fedora 27 RPM Package](https://github.com/gjalves/pgscope/releases/download/0.0.2/pgscope-0.0.2-1.fc27.x86_64.rpm)
 
 ## Installation from source
 
@@ -17,12 +17,15 @@ cd libpg_query
 make
 cd -
 make
+mkdir ~/.vim/after/ftplugin/
+cp sql.vim .vim/after/ftplugin/sql.vim
 ```
 
 ## Using
 
-Type pgscope to index all .sql files in current and descending directories. After that, open your .sql file with vim and put cursor under any external function. Call it using <kbd>CTRL</kbd>+<kbd>]</kbd>. If you wish to came back to calling function, use <kbd>CTRL</kbd>+<kbd>O</kbd>
+Type pgscope to index all .sql files in current and descending directories. After that, open your .sql file with vim and put cursor under any external function. Call it using <kbd>CTRL</kbd>+<kbd>]</kbd>. If you wish to came back to calling function, use <kbd>CTRL</kbd>+<kbd>o</kbd>
 
+You can autocomplete functions using <kbd>CTRL</kbd>+<kbd>x</kbd> and <kbd>CTRL</kbd>+<kbd>o</kbd>
 If you need to reindex, use `:!pgscope` in vim.
 
 If you wish to reindex automatically after save, type in vim command mode:

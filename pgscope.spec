@@ -1,6 +1,6 @@
 Name: pgscope
 Vendor: Gustavo Junior Alves
-Version: 0.0.1
+Version: 0.0.2
 Release: 1%{?dist}
 Summary: PL/pgSQL source code tree search and browse tool
 
@@ -16,11 +16,15 @@ BuildRequires: coreutils
 
 %changelog
 
+* Sun Dec 16 2017 Gustavo Junior Alves <gjalves@gjalves.com.br> 0.0.2
+- Autocomplete VIM script file
+
 * Sun Dec 10 2017 Gustavo Junior Alves <gjalves@gjalves.com.br> 0.0.1
 - Initial release
 
 %install
 install -D pgscope ${RPM_BUILD_ROOT}/usr/bin/pgscope
+install -D sql.vim ${RPM_BUILD_ROOT}/usr/share/pgscope/sql.vim
 
 %description
 PL/pgSQL source code tree search and browse tool
@@ -35,6 +39,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root,-)
 /usr/bin/pgscope
+/usr/share/pgscope/sql.vim
 
 %post
 
