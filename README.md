@@ -12,6 +12,8 @@ Embed seamlessly with vim
 ## Installation from source
 
 ```
+git clone https://github.com/gjalves/pgscope.git
+cd pgscope
 git clone https://github.com/lfittl/libpg_query.git
 cd libpg_query
 make
