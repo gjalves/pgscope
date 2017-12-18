@@ -19,8 +19,9 @@ cd libpg_query
 make
 cd -
 make
-mkdir ~/.vim/after/ftplugin/
-cp sql.vim .vim/after/ftplugin/sql.vim
+cp pgscope /usr/bin/pgscope
+mkdir -p ~/.vim/after/ftplugin/
+cp sql.vim ~/.vim/after/ftplugin/sql.vim
 ```
 
 ## Using
