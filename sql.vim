@@ -3,21 +3,12 @@
 " Maintainer:   Gustavo Junior Alves <gjalves@gjalves.com.br>
 " Last Change:  2017 Dec 16
 
-au! BufNewFile,BufRead *.sql call s:FTbtm()
-function! s:FTbtm()
-  if exists("g:dosbatch_syntax_for_btm") && g:dosbatch_syntax_for_btm
-    setf dosbatch
-  else
-    setf btm
-  endif
-endfunction
-
 fun! Pgscope_complete(findstart, base)
     if(a:findstart == 1) && (a:base == '')
         return 0
     endif
 
-    for line in readfile("tags", '', 10)
+    for line in readfile("tags", '')
         if (strcharpart(line, 0, 1) != '!')
             let parts = split(line)
             if(stridx(parts[0], a:base) == 0)
